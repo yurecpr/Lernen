@@ -7,7 +7,7 @@ public class summMassiv {
 
         for (int i = 0; i < nums.length; i++)
             sum += nums[i];
-        System.out.println(+sum);
+//        System.out.println(+sum);
     }
 
 }
