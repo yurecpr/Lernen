@@ -7,13 +7,13 @@ public class forEach_1 {
         int value = 9;
         boolean isFound = false;
 
-        for (int elt : numbers) {
-            if (elt == value) {
+        for (int el : numbers) {
+            if (el == value) {
                 isFound = true;
-                System.out.println(elt + "--Found");
+                System.out.println(el + "--Found");
                 break;
             } else
-                System.out.println(elt + "--Not found");
+                System.out.println(el + "--Not found");
 
         }
     }
