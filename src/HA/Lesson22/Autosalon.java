@@ -8,7 +8,7 @@ public class Autosalon {
         String[] salon = {"Audi", "BMW", "Ford", "Honda", "Hyundai", "Kia", "Mazda"};
         Autosalon carSalon = new Autosalon(salon);
 
-        // Пример вызова метода findCar
+
         carSalon.findCar("Audi");
         carSalon.findCar("Toyota");
     }
