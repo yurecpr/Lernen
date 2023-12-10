@@ -26,6 +26,7 @@ public class Autosalon {
             System.out.println("This car is available.");
         } else {
             System.out.print("This car is not available, please choose from: " + salon);
+
         }
     }
 }
