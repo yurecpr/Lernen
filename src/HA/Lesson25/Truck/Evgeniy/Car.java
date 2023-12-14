@@ -1,6 +1,6 @@
 package HA.Lesson25.Truck.Evgeniy;
 
-public final class Car {
+public class Car {
     private String model;
     private String manufacturer;
     private int year;
