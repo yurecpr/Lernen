@@ -6,8 +6,5 @@ class Form {
 
     }
 
-    public String toString() {
-        return "Area: ";
-    }
 
 }
