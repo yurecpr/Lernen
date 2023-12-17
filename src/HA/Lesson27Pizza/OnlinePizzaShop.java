@@ -1,44 +1,40 @@
 package HA.Lesson27Pizza;
 
-
 import java.util.Scanner;
 
-class OnlinePizzaShop {
+public class OnlinePizzaShop {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
         PizzaChoice pizzaChoice = new PizzaChoice();
+        Scanner scanner = new Scanner(System.in);
 
-        boolean pizzaOrder = true;
+        do {
+            System.out.println("Choose your pizza:");
+            System.out.println("1. Salami Pizza");
+            System.out.println("2. Margarita Pizza");
+            System.out.println("3. Hawaii Pizza");
 
-        while (pizzaOrder) {
-            System.out.println("Choose the type of pizza:");
-            System.out.println("1. Salami");
-            System.out.println("2. Margarita");
-            System.out.println("3. Hawaii");
-            System.out.print("Enter your choice (1-3): ");
             int choice = scanner.nextInt();
+            scanner.nextLine();
 
-            // Создаем объект нужного типа пиццы через класс PizzaChoice
-            Pizza pizza = pizzaChoice.choosePizza(choice);
-
-            if (pizza != null) {
-                System.out.println("You've ordered:");
-                pizza.prepare();
-                pizza.bake();
-                pizza.pack();
-            } else {
-                System.out.println("Invalid choice. Please choose again.");
+            String pizzaType;
+            switch (choice) {
+                case 1:
+                    pizzaType = "Salami Pizza";
+                    break;
+                case 2:
+                    pizzaType = "Margarita Pizza";
+                    break;
+                case 3:
+                    pizzaType = "Hawaii Pizza";
+                    break;
+                default:
+                    System.out.println("Wrong choice");
+                    continue;
             }
 
-            System.out.print("Do you want to order another pizza? (yes/no): ");
-            String orderAgain = scanner.next();
+            pizzaChoice.orderPizza(pizzaType);
 
-            if (!orderAgain.equalsIgnoreCase("yes")) {
-                pizzaOrder = false;
-            }
-        }
-
-        System.out.println("Thank you for ordering from OnlinePizzaShop!");
-        scanner.close();
+            System.out.println("Do you want to order another pizza? (yes/no):");
+        } while (scanner.nextLine().equalsIgnoreCase("yes"));
     }
 }

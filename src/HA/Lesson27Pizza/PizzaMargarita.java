@@ -1,25 +1,20 @@
 package HA.Lesson27Pizza;
 
+public class PizzaMargarita extends Pizza {
+    public PizzaMargarita() {
+        super("Margarita");
+    }
 
-class PizzaMargarita extends Pizza {
-    // Методы, отражающие процесс приготовления пиццы Маргарита
+
     public void prepare() {
-        System.out.println("Preparing Margarita pizza: adding tomato sauce, cheese, and basil...");
+        System.out.println("Preparing Margarita Pizza: Adding tomato sauce, cheese, and basil.");
+    }
+
+    public void bake() {
+        System.out.println("Baking Margarita Pizza at 180°C for 12 minutes.");
+    }
+
+    public void pack() {
+        System.out.println("Packing Margarita Pizza for delivery.");
     }
 }
-
-//class Pizza {
-//    // Методы, отражающие процесс приготовления пиццы
-//    public void prepare() {
-//        System.out.println("Preparing the pizza...");
-//    }
-//
-//    public void bake() {
-//        System.out.println("Baking the pizza...");
-//    }
-//
-//    public void pack() {
-//        System.out.println("Packing the pizza...");
-//    }
-
-

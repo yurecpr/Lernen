@@ -1,22 +1,21 @@
 package HA.Lesson27Pizza;
 
-import java.util.Scanner;
+public class Pizza {
+    String name;
 
-// Родительский класс Pizza
-class Pizza {
-    // Методы, отражающие процесс приготовления пиццы
+    public Pizza(String name) {
+        this.name = name;
+    }
+
     public void prepare() {
-        System.out.println("Preparing the pizza...");
+        System.out.println("Готовим " + name + "...");
     }
 
     public void bake() {
-        System.out.println("Baking the pizza...");
+        System.out.println("Пеким " + name + "...");
     }
 
     public void pack() {
-        System.out.println("Packing the pizza...");
+        System.out.println("Упаковываем " + name + "...");
     }
-
-
 }
-

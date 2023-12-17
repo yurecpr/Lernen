@@ -1,15 +1,23 @@
 package HA.Lesson27Pizza;
 
-class PizzaChoice {
+public class PizzaChoice {
+    public void orderPizza(String type) {
+        Pizza pizza = choosePizza(type);
+        if (pizza != null) {
+            pizza.prepare();
+            pizza.bake();
+            pizza.pack();
+        }
+    }
 
-    public Pizza choosePizza(int choice) {
-        switch (choice) {
-            case 1:
-                return new PizzaSalami();
-            case 2:
-                return new PizzaMargarita();
-            case 3:
+    private Pizza choosePizza(String type) {
+        switch (type) {
+            case "Salami Pizza":
                 return new PizzaHawaii();
+            case "Margarita Pizza":
+                return new PizzaMargarita();
+            case "Hawaii Pizza":
+                return new PizzaSalami();
             default:
                 return null;
         }

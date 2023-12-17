@@ -1,24 +1,20 @@
 package HA.Lesson27Pizza;
 
-class PizzaSalami extends Pizza {
-    // Методы, отражающие процесс приготовления пиццы Салями
-    public void prepare() {
-        System.out.println("Preparing Salami pizza: adding tomato sauce, cheese, and salami...");
+public class PizzaSalami extends Pizza {
+    public PizzaSalami() {
+        super("Salami");
     }
 
-//
-//    // Методы, отражающие процесс приготовления пиццы
-//    public void prepare() {
-//        System.out.println("Preparing the pizza...");
-//    }
-//
-//    public void bake() {
-//        System.out.println("Baking the pizza...");
-//    }
-//
-//    public void pack() {
-//        System.out.println("Packing the pizza...");
-//    }
 
+    public void prepare() {
+        System.out.println("Preparing Salami Pizza: Adding tomato sauce, cheese, salami, and other ingredients.");
+    }
 
+    public void bake() {
+        System.out.println("Baking Salami Pizza at 200°C for 15 minutes.");
+    }
+
+    public void pack() {
+        System.out.println("Packing Salami Pizza for delivery.");
+    }
 }
