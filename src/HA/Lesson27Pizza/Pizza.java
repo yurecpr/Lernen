@@ -8,14 +8,14 @@ public class Pizza {
     }
 
     public void prepare() {
-        System.out.println("Готовим " + name + "...");
+        System.out.println("Preparing " + name + "...");
     }
 
     public void bake() {
-        System.out.println("Пеким " + name + "...");
+        System.out.println("Baking " + name + "...");
     }
 
     public void pack() {
-        System.out.println("Упаковываем " + name + "...");
+        System.out.println("Packing " + name + "...");
     }
 }
