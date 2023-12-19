@@ -7,7 +7,8 @@ class Flower extends Plant {
 
     @Override
     void doSpring() {
-        height += 5;
+        height += 10;
+
         System.out.println();
         System.out.println("<<<<<<<<<<  Spring  >>>>>>>>>>>>>>");
 
@@ -25,6 +26,10 @@ class Flower extends Plant {
 
     @Override
     void doAutumn() {
+        if (height >= 10) {
+            height = 0;
+        }
+        ;
         System.out.println();
         System.out.println("<<<<<<<<<<  Autumn  >>>>>>>>>>>>>>");
         System.out.println("Flower is being pruned in autumn...");

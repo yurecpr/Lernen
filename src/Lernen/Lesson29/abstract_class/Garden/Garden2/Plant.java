@@ -20,7 +20,7 @@ abstract class Plant {
 
     abstract void doWinter();
 
-    // Метод для вывода информации о растении
+
     public String toString() {
         return "Name: " + name + ", Height: " + height + ", Age: " + age;
     }
