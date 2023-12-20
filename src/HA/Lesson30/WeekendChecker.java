@@ -13,7 +13,7 @@ public class WeekendChecker {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите день недели: ");
+        System.out.println("Input da of weak: ");
         String input = scanner.nextLine();
 
         boolean found = false;
@@ -21,13 +21,13 @@ public class WeekendChecker {
             if (day.name().equalsIgnoreCase(input)) {
                 found = true;
                 boolean isWeekend = day.isWeekend();
-                System.out.println("Этот день выходной? " + isWeekend);
+                System.out.println("Is day weekend? " + isWeekend);
                 break;
             }
         }
 
         if (!found) {
-            System.out.println("Неверный день недели!");
+            System.out.println("Wrong input");
         }
     }
 }
