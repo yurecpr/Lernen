@@ -41,12 +41,11 @@ public abstract class Employee implements Comparable<Employee> {
 
     @Override
     public String toString() {
-        return "Employee{" +
-                "id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", hour=" + hour +
-                '}';
+        return "Employee " +
+                "id= " + id +
+                " firstName= " + firstName + '\'' +
+                " lastName= " + lastName + '\'' +
+                " hour= " + hour;
     }
 
 

@@ -1,5 +1,7 @@
 package HA.Lesson34.Comparable;
 
+import java.util.Arrays;
+
 public class Main {
     /*
     Создать программу для бухгалтерии, которая сможет делать следующее:
@@ -72,6 +74,9 @@ public class Main {
 
 
         company.sortEmployeesByLastName();
+        System.out.println("---------------Sort by Id----------");
+        company.sortEmployeesById();
+
 
         System.out.println("List of employees");
         company.display();
@@ -79,6 +84,7 @@ public class Main {
         System.out.println("-----remove sales manager 1");
         System.out.println(company.removeEmployee(salesManager1));
         company.display();
+
 
         System.out.println("Everybody's salary = " + company.sumSalary());
     }

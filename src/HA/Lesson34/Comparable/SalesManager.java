@@ -30,10 +30,10 @@ public class SalesManager extends Employee {
 
     @Override
     public String toString() {
-        return "SalesManager{" +
-                "salesVolume=" + salesVolume +
-                ", percent=" + percent +
-                '}' + super.toString();
+        return "SalesManager " +
+                "salesVolume= " + salesVolume +
+                " percent= " + percent +
+                super.toString();
     }
 
 

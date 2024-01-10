@@ -50,4 +50,11 @@ public class Company {
     public void sortEmployeesByLastName() {
         Arrays.sort(employees, 0, companySize);
     }
+
+    public void sortEmployeesById() {
+        Arrays.sort(employees, 0, companySize, new IdComparator());
+    }
+
 }
+
+
